@@ -28,7 +28,7 @@
             <div class="theme_toggle">
                 <img id="theme_arrow" src="./img/arrow_curve.jpg" alt="Theme arrow">
                 <p id="theme_text">theme switch</p>
-                <img id="theme_icon" src="./img/lego.jpg" alt="Theme icon">
+                <img id="theme_icon" onclick="themeswitch()" src="./img/lego.jpg" alt="Theme icon">
             </div>
         </header>
         <main>
@@ -58,13 +58,18 @@
                 <span class="small_media_text">call me!</span></p>
                 </div>
                 <div class="social_links">
-                <img class="social_icon" src="./img/telegram.jpg" alt="Telegram">
-                <img class="social_icon" src="./img/instagram.jpg" alt="Instagram">
-                <img class="social_icon" src="./img/discord.jpg" alt="Discord">
-                <img class="social_icon" src="./img/mail.jpg" alt="Email">
+                <a href="http://t.me/luw1ng" target="_blank"><img class="social_icon" src="./img/telegram.jpg" alt="Telegram"></a>
+                <a href="https://www.instagram.com/luw1ng" target="_blank"><img class="social_icon" src="./img/instagram.jpg" alt="Instagram"></a>
+                <a href="https://discordapp.com/users/700666361030115329" target="_blank"><img class="social_icon" src="./img/discord.jpg" alt="Discord"></a>
+                <a href="mailto:opressormk777@gmail.com"><img class="social_icon" src="./img/mail.jpg" alt="Email"></a>
                 </div>
             </div>
         </footer>
     </div>
+    <script>
+        function themeswitch() {
+            document.body.classList.toggle("inverted-theme");
+        }
+    </script>
 </body>
 </html>
