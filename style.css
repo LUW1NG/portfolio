@@ -176,7 +176,7 @@ footer{
 }
 .social_links{
     width:30%;
-    heght:8vh;
+    height:8vh;
     display:flex;
     flex-direction:row;
     justify-content:space-around;
@@ -184,4 +184,143 @@ footer{
 }
 .social_icon{
     height:6vh;
+}
+@media screen and (max-width: 768px) {
+    .box {
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto; 
+        padding-bottom: 20px;
+    }
+
+    header {
+        height: auto;
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    #logo {
+        font-size: 4rem; 
+    }
+
+    nav {
+        width: 90%;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+
+    #about_me, #experience, #projects {
+        font-size: 1.5rem;
+    }
+
+    .theme_toggle {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        gap: 10px;
+    }
+
+    #theme_arrow {
+        display: none;
+    }
+
+    #theme_text {
+        font-size: 1.2rem;
+    }
+
+    #theme_icon {
+        height: 50px;
+    }
+
+    main {
+        flex-direction: column;
+        height: auto;
+        margin-top: 20px;
+        gap: 40px;
+    }
+
+    .text_bio {
+        width: 90%;
+        height: auto;
+        font-size: 1.5rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .about_text {
+        font-size: 3rem;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .attention_class {
+        font-size: 1.8rem;
+    }
+
+    .web_cam {
+        width: 80%;
+        height: auto;
+        margin: 0;
+    }
+
+    .web_cam p {
+        position: relative;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .web_cam_img {
+        margin-top: 0;
+        height: auto;
+    }
+
+    footer {
+        height: auto;
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .deal_ad {
+        width: 90%;
+        justify-content: center;
+        height: auto;
+        gap: 10px;
+    }
+
+    .deal_text {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .social_media {
+        width: 90%;
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+    }
+
+    .media_text {
+        width: 100%;
+        justify-content: center;
+        height: auto;
+    }
+
+    .social_text {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .social_links {
+        width: 100%;
+    }
+
+    .social_icon {
+        height: 40px;
+    }
 }
