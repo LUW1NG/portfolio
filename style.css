@@ -3,7 +3,6 @@
     padding:0;
     box-sizing:border-box;
     text-decoration:none;
-    
 }
 a{
     text-decoration:none;
@@ -28,11 +27,11 @@ header{
     align-items:center;
 }
 #logo{
-    font-size:120px;
-     font-family: "Inspiration", cursive;
+    font-size:12vh;
+    font-family: "Inspiration", cursive;
     font-weight: 400;
-     font-style: normal;
-     cursor:default;
+    font-style: normal;
+    cursor:default;
 }
 nav{
     width:50%;
@@ -42,40 +41,43 @@ nav{
     justify-content:space-between;
     align-items:center;
 }
-#about-me{
-    font-size:52px;
+#about_me{
+    font-size:5.2vh;
     font-family: "Just Me Again Down Here", cursive;
     font-weight: 400;
     font-style: normal;
 }
 #experience{
-    font-size:48px;
+    font-size:4.8vh;
 }
 #projects{
-    font-size:48px;
+    font-size:4.8vh;
     font-family: "Jacquarda Bastarda 9", serif;
     font-weight: 400;
     font-style: normal;
 }
-.theme-toggle{
+.theme_toggle{
     width:15%;
     height:15vh;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content:center;
 }
-#theme-arrow{
+#theme_arrow{
     height:10vh;
-    transform:rotate(-21deg);
+    width:65%;
+    transform:rotate(-11deg);
     z-index:0;
-    margin-bottom:0.5vh;
+    margin-bottom:-2.5vh;
+    margin-left:-1.5%;
 }
-#theme-text{
+#theme_text{
     z-index:1;
-    font-size:36px;
+    font-size:3.6vh;
     font-family: sans-serif;
 }
-#theme-icon{
+#theme_icon{
     height:15vh;
 }
 main{
@@ -88,22 +90,30 @@ main{
 }
 .text_bio{
     width:75%;
+    margin-top:-5vh;
     height:60vh;
-    font-size:48px;
+    font-family:instrument serif;
+    font-size:4.8vh;
+    margin-left:1%;
 }
 .about_text{
-    font-size:68px;
+    font-size:12.8vh;
 }
 .attention_class{
-    font-size: 58px;
+    font-size: 5.8vh;
 }
 .web_cam{
-    width:20%;
+    width:15%;
     height:60vh;
-    font-size: 45px;
-    border: dashed 1px black;
+    font-size: 4.5vh;
+    border: solid 1px black;
+    margin-right:0.5%;
+}
+.web_cam p{
+    position:absolute;
 }
 .web_cam_img{
+    margin-top:5vh;
     width:100%;
     height:50vh;
 }
@@ -126,9 +136,10 @@ footer{
 }
 .deal_text{
     font-size:3.5vh;
+    text-align:right;
 }
 .deal_img{
-    height:6vh;
+    height:8vh;
     width:25%;
 }
 .social_media{
@@ -138,8 +149,30 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border:solid 1px pink;
 }
-footer img{
+.media_text{
+    width:60%;
+    height:8vh;
+    display:flex;
+    flex-direction:row;
+    align-items:start;
+    justify-content:end;
+}
+.social_text{
+    font-size:7vh;
+}
+.small_media_text{
+    font-size:1vh;
+    margin-top:-1vh;
+}
+.social_links{
+    width:30%;
+    heght:8vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+}
+.social_icon{
     height:6vh;
 }
