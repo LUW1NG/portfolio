@@ -3,6 +3,7 @@
     padding:0;
     box-sizing:border-box;
     text-decoration:none;
+    
 }
 a{
     text-decoration:none;
@@ -19,6 +20,7 @@ a{
 }
 header{
     width:100%;
+    margin:0;
     height:15vh;
     display:flex;
     flex-direction:row;
@@ -71,6 +73,7 @@ nav{
 #theme-text{
     z-index:1;
     font-size:36px;
+    font-family: sans-serif;
 }
 #theme-icon{
     height:15vh;
@@ -82,20 +85,27 @@ main{
     flex-direction:row;
     justify-content:space-between;
     align-items:center;
-    background-color:rgba(255, 0, 0, 0.8);
 }
 .text_bio{
     width:75%;
     height:60vh;
-    background-color:rgba(0, 0, 0, 0.8);
+    font-size:48px;
+}
+.about_text{
+    font-size:68px;
+}
+.attention_class{
+    font-size: 58px;
 }
 .web_cam{
     width:20%;
     height:60vh;
-    background-color:rgba(0, 89, 255, 0.8);
+    font-size: 45px;
+    border: dashed 1px black;
 }
-main img{
-    height:300px;
+.web_cam_img{
+    width:100%;
+    height:50vh;
 }
 footer{
     width:100%;
@@ -104,18 +114,32 @@ footer{
     flex-direction:row;
     justify-content:space-between;
     align-items:center;
-    background-color:rgba(255, 0, 0, 0.8);
 }
 .deal_ad{
     width:25%;
     height:8vh;
-    background-color:rgba(0, 255, 0, 0.8);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+}
+.deal_text{
+    font-size:3.5vh;
+}
+.deal_img{
+    height:6vh;
+    width:25%;
 }
 .social_media{
     width:55%;
     height:8vh;
-    background-color:rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border:solid 1px pink;
 }
 footer img{
-    height:60px;;
+    height:6vh;
 }
