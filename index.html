@@ -3,6 +3,9 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jacquarda+Bastarda+9&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,26 +47,34 @@
             </div>
             <div class="web_cam">
                 <p>my web-cam <br> footage</p>
-                <img class="web_cam_img" src="./img/zombie.jpg" alt="Web-cam footage">
+                <img id="zombie_img" class="web_cam_img" src="./img/zombie.jpg" alt="Web-cam footage">
             </div>
             </div>
             <div class="main_content" id="experience">
                 <div id="experience_text" contenteditable="true" spellcheck="false">
-                    I've worked with several technologies and frameworks, including HTML, CSS, JavaScript, React and always looking for new ones. I have experience in both frontend and small backend development, and I'm always eager to learn new skills and take on challenging projects.
+                    I've worked with several technologies and frameworks, including HTML, CSS, JavaScript, React and always looking for new ones. I have experience in both frontend and small backend development. I'm always eager to learn new skills and take on challenging projects.
                 </div>
             </div>
             <div class="main_content" id="projects">
-                <p>Currently i don't have any real cases of work, but i have my own little project where i tried to work with laravel:)</p>
+                <div class="text_projects"><p>Currently i don't have any real cases of work, but i have my own little project where i tried to work with laravel:)</p></div>
                 
-                <div class="project_container"></div>
-                <div class="project_container"></div>
+                <div class="project_container">
+                    <a id="project_link_yeezy" class="project_container_link" href="https://github.com/luw1ng/yeezy-housing" target="_blank">
+                    <h2>Yeezy housing</h2>
+                    <p>Had an idea for a forum like project with minimalistic design inspired by yeezy. Back-end was built with Laravel. <br> With heavy use of AI help because i was still figuring out things. <br> For styles i tried to use Tailwind CSS.</p>
+                    </a>
+                </div>
+                <div class="project_container under_construction">
+                    <h2>Future Project</h2>
+                    <p>...</p>
+                    </div>
             </div>
         </main>
         <footer>
             <div class="deal_ad">
                 <p class="deal_text">crazy deals <br>
                 only today, only here!!!</p>
-                <img class="deal_img" src="./img/troll_middle.jpg" alt="Crazy deal">
+                <div class="deal_img" alt="Crazy deal"></div>
             </div>
             <div class="social_media">
                 <div class="media_text">
@@ -82,6 +93,8 @@
     <script>
 const navlinks = document.querySelectorAll('.nav-link');
 const contentsections = document.querySelectorAll('.main_content');
+const aud= new Audio("zombie.mp3")
+const img_zombie=document.getElementById("zombie_img")
 navlinks.forEach(link => {
     link.addEventListener('click', function(event) {
         event.preventDefault(); 
@@ -95,6 +108,10 @@ navlinks.forEach(link => {
         function themeswitch() {
             document.body.classList.toggle("inverted-theme");
         }
+        img_zombie.addEventListener('click', () => {
+        aud.currentTime=0;
+        aud.play();
+        })
     </script>
 </body>
 </html>

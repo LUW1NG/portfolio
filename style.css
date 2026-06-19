@@ -110,24 +110,70 @@ main{
     flex-wrap:wrap;
     justify-content:space-around;
     align-items:start;
-    background-color:rgba(0, 0, 0, 0.068);
+}
+.text_projects{
+    width:100%;
+    height:10vh;
+    cursor:default;
+    font-size:4.8vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    font-family: "Just Me Again Down Here", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 .project_container{
     width:30%;
-    height:15vh;
-    background-color:rgba(0, 0, 0, 0.068);
+    height:30vh;
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:center;
+    box-shadow: 0px 0px 1px rgb(0, 0, 0);
+    transition: all 0.2s ease-in-out;
+    text-align:center;
+    font-size:2.1vh;
+}
+.project_container_link{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+.project_container:hover{
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    cursor:pointer;
+}
+#project_link_yeezy{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.under_construction{
+    opacity:0.5;
+}
+.under_construction:hover{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.500);
+    cursor:default;
 }
 .text_bio{
     width:75%;
+    overflow:auto;
     margin-top:-5vh;
     height:60vh;
     font-family:instrument serif;
     font-size:4.8vh;
+    font-family: "Just Me Again Down Here", cursive;
+    font-weight: 400;
+    font-style: normal;
     margin-left:1%;
+}
+.text_bio::-webkit-scrollbar{
+    display:none;
 }
 .about_text{
     font-size: 12.8vh;
@@ -146,23 +192,24 @@ main{
     display:none;
 }
 #experience_text {
-    width:80%;
-    height:auto;
+    width:70%;
+    min-height:50vh;
     margin: 0 auto;
+    border: 1px solid black;
     text-align: center;
+    font-size:4.8vh;
     padding: 10px;
     border-radius: 5px;
     transition: all 0.2s ease-in-out;
 }
 #experience_text:hover {
-    background-color: rgba(0, 0, 0, 0.068);
     cursor: text;
 }
 #experience_text:focus {
     outline: none;
 }
 #experience_text:empty::before,
-#experience_text:has(> br:only-child)::before {
+#experience_text:has(br)::before {
   content: "why u bulleh me";
   pointer-events: none;
 }
@@ -173,6 +220,7 @@ main{
     margin-top:8vh;
     width:100%;
     height:50vh;
+    cursor:pointer;
 }
 footer{
     width:100%;
@@ -188,7 +236,7 @@ footer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: end;
+    align-items: center;
     justify-content: space-between;
 }
 .deal_text{
@@ -198,7 +246,15 @@ footer{
 }
 .deal_img{
     height:8vh;
-    width:25%;
+    width:15%;
+    background-image: url(img/yin-yang.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+}
+.deal_img:hover{
+    background-image: url(img/troll_middle.jpg);
+    transition: all 0.5s ease-in-out;
 }
 .social_media{
     width:55%;
