@@ -21,9 +21,9 @@
         <header>
             <p id="logo">luw1ng</p>
             <nav>
-                    <p id="about_me"><a href="#">About me</a></p>
-                    <p id="experience"><a href="#">Experience</a></p>
-                    <p id="projects"><a href="#">Projects</a></p>
+                    <p id="about_me"><a href="#" class="nav-link" data-link="about">About me</a></p>
+                    <p id="experience"><a href="#" class="nav-link" data-link="experience">Experience</a></p>
+                    <p id="projects"><a href="#" class="nav-link" data-link="projects">Projects</a></p>
             </nav>
             <div class="theme_toggle">
                 <img id="theme_arrow" src="./img/arrow_curve.jpg" alt="Theme arrow">
@@ -32,6 +32,7 @@
             </div>
         </header>
         <main>
+            <div class="main_content" id="about">
             <div class="text_bio">
                 <p><span class="about_text">About me: </span>
                  Matvii (luw1ng) Ponitaikin | front-end <br>
@@ -44,6 +45,11 @@
             <div class="web_cam">
                 <p>my web-cam <br> footage</p>
                 <img class="web_cam_img" src="./img/zombie.jpg" alt="Web-cam footage">
+            </div>
+            </div>
+            <div class="main_content" id="experience">
+            </div>
+            <div class="main_content" id="projects">
             </div>
         </main>
         <footer>
@@ -67,6 +73,18 @@
         </footer>
     </div>
     <script>
+const navlinks = document.querySelectorAll('.nav-link');
+const contentsections = document.querySelectorAll('.main_content');
+navlinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault(); 
+        contentsections.forEach(section => {
+            section.style.display = 'none';
+        });
+        const targetId = this.getAttribute('data-link');
+        document.getElementById(targetId).style.display = 'flex';
+    });
+});
         function themeswitch() {
             document.body.classList.toggle("inverted-theme");
         }

@@ -91,8 +91,11 @@ nav{
 main{
     width:100%;
     height:70vh;
+}
+.main_content{
+    width:100%;
+    height:70vh;
     display:flex;
-    margin-top:-5vh;
     flex-direction:row;
     justify-content:space-between;
     align-items:center;
@@ -102,19 +105,19 @@ main{
     margin-top:-5vh;
     height:60vh;
     font-family:instrument serif;
-    font-size:4.8vh;
+    font-size:48px;
     margin-left:1%;
 }
 .about_text{
-    font-size:12.8vh;
+    font-size:128px;
 }
 .attention_class{
-    font-size: 5.8vh;
+    font-size: 58px;
 }
 .web_cam{
     width:15%;
     height:60vh;
-    font-size: 4.5vh;
+    font-size: 45px;
     border: solid 1px black;
     margin-right:0.5%;
 }
@@ -122,7 +125,7 @@ main{
     position:absolute;
 }
 .web_cam_img{
-    margin-top:5vh;
+    margin-top:8vh;
     width:100%;
     height:50vh;
 }
@@ -144,7 +147,7 @@ footer{
     justify-content: space-between;
 }
 .deal_text{
-    font-size:3.5vh;
+    font-size:35px;
     text-align:right;
 }
 .deal_img{
@@ -185,7 +188,7 @@ footer{
 .social_icon{
     height:6vh;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-aspect-ratio: 1/1) {
     .box {
         height: auto;
         min-height: 100vh;
@@ -212,17 +215,16 @@ footer{
         gap: 10px;
     }
 
-    #about_me, #experience, #projects {
-        font-size: 1.5rem;
-    }
-
-    .theme_toggle {
-        width: 100%;
-        flex-direction: row;
-        align-items: center;
-        height: auto;
-        gap: 10px;
-    }
+#about_me, #experience, #projects {
+    font-size: 1.5rem;
+}
+.theme_toggle {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    gap: 10px;
+}
 
     #theme_arrow {
         display: none;
@@ -242,7 +244,12 @@ footer{
         margin-top: 20px;
         gap: 40px;
     }
-
+.main_content {
+        flex-direction: column;
+        height: auto;
+        margin-top: 20px;
+        gap: 40px;
+    }
     .text_bio {
         width: 90%;
         height: auto;
