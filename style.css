@@ -126,7 +126,7 @@ main{
 }
 .project_container{
     width:30%;
-    height:30vh;
+    min-height:30vh;
     display:flex;
     flex-direction:column;
     justify-content:space-around;
@@ -291,31 +291,30 @@ footer{
     height:6vh;
 }
 @media screen and (max-aspect-ratio: 1/1) {
-    .box {
-        height: auto;
-        min-height: 100vh;
-        overflow-y: auto; 
-        padding-bottom: 20px;
-    }
+.box {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto; 
+    padding-bottom: 20px;
+}
 
-    header {
-        height: auto;
-        flex-direction: column;
-        padding: 20px 0;
-        gap: 15px;
-    }
+header {
+    height: auto;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 15px;
+}
+#logo {
+    font-size: 4rem; 
+}
 
-    #logo {
-        font-size: 4rem; 
-    }
-
-    nav {
-        width: 90%;
-        height: auto;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        gap: 10px;
-    }
+nav {
+    width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
 
 #about_me, #experience_link, #projects_link {
     font-size: 1.5rem;
@@ -329,110 +328,102 @@ footer{
 }
 
     #theme_arrow {
-        display: none;
-    }
+    display: none;
+}
 
     #theme_text {
-        font-size: 1.2rem;
-    }
+    font-size: 1.2rem;
+}
 
     #theme_icon {
-        height: 50px;
-    }
+    height: 50px;
+}
 
     main {
-        flex-direction: column;
-        height: auto;
-        margin-top: 20px;
-        gap: 40px;
-    }
+    flex-direction: column;
+    height: auto;
+    margin-top: 20px;
+    gap: 40px;
+}
 .main_content {
-        flex-direction: column;
-        height: auto;
-        margin-top: 20px;
-        gap: 40px;
-    }
+    flex-direction: column;
+    height: auto;
+    margin-top: 20px;
+    gap: 40px;
+}
     .text_bio {
-        width: 90%;
-        height: auto;
-        font-size: 1.5rem;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .about_text {
-        font-size: 3rem;
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    .attention_class {
-        font-size: 1.8rem;
-    }
-
-    .web_cam {
-        width: 80%;
-        height: auto;
-        margin: 0;
-    }
-
-    .web_cam p {
-        position: relative;
-        font-size: 1.5rem;
-        text-align: center;
-        padding-bottom: 10px;
-    }
-
-    .web_cam_img {
-        margin-top: 0;
-        height: auto;
-    }
-
-    footer {
-        height: auto;
-        flex-direction: column;
-        padding: 20px 0;
-        gap: 20px;
-    }
-
-    .deal_ad {
-        width: 90%;
-        justify-content: center;
-        height: auto;
-        gap: 10px;
-    }
-    .deal_img{
-        width:8%;
-        height:auto;
-    }
-    .deal_text {
-        font-size: 1.2rem;
-        text-align: center;
-    }
-
-    .social_media {
-        width: 90%;
-        flex-direction: column;
-        height: auto;
-        gap: 15px;
-    }
-
-    .media_text {
-        width: 100%;
-        justify-content: center;
-        height: auto;
-    }
-
-    .social_text {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .social_links {
-        width: 100%;
-    }
-
-    .social_icon {
-        height: 40px;
-    }
+    width: 90%;
+    height: auto;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.about_text {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 10px;
+}
+.attention_class {
+    font-size: 1.8rem;
+}
+.web_cam {
+    width: 80%;
+    height: auto;
+    margin: 0;
+}
+.web_cam p {
+    position: relative;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.web_cam_img {
+    margin-top: 0;
+    height: auto;
+}
+footer {
+    height: auto;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 20px;
+}
+.deal_ad {
+    width: 90%;
+    justify-content: center;
+    height: auto;
+    gap: 10px;
+}
+.deal_img{
+    width:8%;
+    height:5vh;
+}
+.deal_text {
+    font-size: 1.2rem;
+    text-align: center;
+}
+.social_media {
+    width: 90%;
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+}
+.media_text {
+    width: 100%;
+    justify-content: center;
+    height: auto;
+}
+.social_text {
+    font-size: 2rem;
+    text-align: center;
+}
+.social_links {
+    width: 100%;
+}
+.social_icon {
+    height: 40px;
+}
+.text_projects{
+    text-align: center;
+    margin-bottom: 5vh;
+}
 }
