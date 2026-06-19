@@ -102,6 +102,25 @@ main{
     justify-content:space-between;
     align-items:center;
 }
+#projects{
+    width:100%;
+    min-height:70vh;
+    display:none;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:start;
+    background-color:rgba(0, 0, 0, 0.068);
+}
+.project_container{
+    width:30%;
+    height:15vh;
+    background-color:rgba(0, 0, 0, 0.068);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+}
 .text_bio{
     width:75%;
     margin-top:-5vh;
@@ -111,10 +130,10 @@ main{
     margin-left:1%;
 }
 .about_text{
-    font-size: 3.5rem;
+    font-size: 12.8vh;
 }
 .attention_class{
-    font-size: 2rem;
+    font-size: 6.4vh;
 }
 .web_cam{
     width:15%;
@@ -127,14 +146,12 @@ main{
     display:none;
 }
 #experience_text {
-    display:block;
     width:80%;
     height:auto;
     margin: 0 auto;
     text-align: center;
     padding: 10px;
     border-radius: 5px;
-    border:none;
     transition: all 0.2s ease-in-out;
 }
 #experience_text:hover {
@@ -143,6 +160,11 @@ main{
 }
 #experience_text:focus {
     outline: none;
+}
+#experience_text:empty::before,
+#experience_text:has(> br:only-child)::before {
+  content: "why u bulleh me";
+  pointer-events: none;
 }
 .web_cam p{
     position:absolute;
